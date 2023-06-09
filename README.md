@@ -7,10 +7,10 @@ This is a Zabbix API Client for NodeJS and Browsers written in Typescript to int
 Install this lib with npm:
 
 ```bash
-npm install --save zabbix-client
+npm install --save @fjedi/zabbix-client
 ```
 
-All parameters used within this lib can be found in the [Zabbix API documentation itself](https://www.zabbix.com/documentation/4.0/manual/api).
+All parameters used within this lib can be found in the [Zabbix API documentation itself](https://www.zabbix.com/documentation/6.4/manual/api).
 
 Parameters like `jsonrpc`, `id` and etc are abstracted within this lib.
 
@@ -19,7 +19,7 @@ Parameters like `jsonrpc`, `id` and etc are abstracted within this lib.
 Creating the object then logging in:
 
 ```javascript
-const { ZabbixClient } = require("zabbix-client");
+const { ZabbixClient } = require("@fjedi/zabbix-client");
 
 // No calls are made here yet
 const client = new ZabbixClient("http://company.com/zabbix/api_jsonrpc.php");
@@ -33,7 +33,7 @@ After the login, we get an `api` object which is an instance of `ZabbixAPI` clas
 Let's get the api info:
 
 ```javascript
-const { ZabbixClient } = require("zabbix-client");
+const { ZabbixClient } = require("@fjedi/zabbix-client");
 
 const client = new ZabbixClient("http://company.com/zabbix/api_jsonrpc.php");
 
