@@ -72,6 +72,3 @@ Thumbs.db
 .idea
 *.iml
 .vscode
-
-# Lib specific
-package-lock.json
